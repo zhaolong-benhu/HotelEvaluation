@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/Common.css" type="text/css" />
+    <link rel="stylesheet" href="./css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="./css/Index.css" type="text/css" />
+    <link rel="stylesheet" href="./dist/css/swiper.min.css">
+    <link href="http://home.9first.com/favicon.ico" rel="shortcut icon" />
+    <title>先之云测评工具</title>
+    <style>
+        body,html{padding:0;margin:0;}
+    </style>
+</head>
+<body>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="slide" src="./images/banner/1.jpg"/></div>
+            <div class="swiper-slide"><img class="slide" src="./images/banner/2.jpg"/></div>
+            <div class="swiper-slide"><img class="slide" src="./images/banner/3.jpg"/></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div class="title" >
+        <a class="logoText" href="javascript:location.reload();">
+            <img class="logo" src="./images/logo.png"/>
+            <span class="titleText">先之云测评工具</span>
+        </a>
+        <div class="search">
+            <input class="searchInput" type="search" id="input_zs" maxlength="24" placeholder="输入报告号查询报告">
+            <i class="searchBtn" onclick="search()">&#xe63e;</i>
+        </div>
+    </div>
+    <a  href="http://www.baidu.com" target="_blank" class="determine">点击测评</a>
+
+    <div class="items">
+        <ul class="item">
+            <li>精准测评</li>
+            <li>解决方案</li>
+            <li>数据支持</li>
+            <li>我们的使命</li>
+            <li>开启测评</li>
+        </ul>
+    </div>
+
+    <div class="analyse">
+        <div class="ten">十大指标精准分析</div>
+        <div class="tenAnalyse">
+            <div class="analyse_1">
+                <div class="analysebg1">
+                    <i class="analyseIcon1" onclick="search()">&#xe624;</i>
+                    <div class="analyseText">客房满意度</div>
+                </div>
+            </div>
+
+            <div class="analyse_2">
+                <div class="analysebg2">
+                    <i class="analyseIcon2" onclick="search()">&#xe63f;</i>
+                    <div class="analyseText">人均创收</div>
+                </div>
+            </div>
+
+            <div class="analyse_3">
+                <div class="analysebg3">
+                    <i class="analyseIcon3">&#xe63f;</i>
+                    <div class="analyseText">人工成本率</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="immediatelyEvaluation" onclick="determineReview()">立即测评</div>
+     </div>
+     <div class="solve">
+            <div class="solveTitle">官方推荐解决方案</div>
+        <ul>
+            <li class="slide-item" data-code="iot" style="width: 226.6px; height: 330.458px;">
+          <a href="https://www.aliyun.com/solution/iot" target="_blank" style="display:block;">
+            <img class="item-bg" src="https://img.alicdn.com/tps/TB1ty_YLXXXXXX4apXXXXXXXXXX-576-840.jpg" alt="">
+            <div class="mask">
+              <div class="bg "></div>
+              <div class="content">
+                <div class="item-img-panel" style="height: 59px;">
+                  <img src="https://img.alicdn.com/tps/TB10trmLXXXXXc1XVXXXXXXXXXX-144-144.png" alt="" class="item-img">
+                  <img src="https://img.alicdn.com/tps/TB1N.PuLXXXXXc3XFXXXXXXXXXX-144-144.png" alt="" class="item-img-hover">
+                </div>
+                <p class="line-panel">
+                  <i class="item-line"></i>
+                </p>
+                <h3 class="item-title">物联网解决方案</h3>
+                <p class="item-desc">
+                  定制化方案助力传统硬件厂商和中小平台服务商快速搭建稳定可靠、安全可控的物联网平台
+                </p>
+                <span class="item-link">查看详情</span>
+              </div>
+            </div>
+          </a>
+        </li>
+                <li class="slide-item" data-code="iot" style="width: 226.6px; height: 330.458px;">
+                  <a href="https://www.aliyun.com/solution/iot" target="_blank" style="display:block;">
+                <img class="item-bg" src="https://img.alicdn.com/tps/TB1ty_YLXXXXXX4apXXXXXXXXXX-576-840.jpg" alt="">
+                <div class="mask">
+                  <div class="bg "></div>
+                  <div class="content">
+                    <div class="item-img-panel" style="height: 59px;">
+                      <img src="https://img.alicdn.com/tps/TB10trmLXXXXXc1XVXXXXXXXXXX-144-144.png" alt="" class="item-img">
+                      <img src="https://img.alicdn.com/tps/TB1N.PuLXXXXXc3XFXXXXXXXXXX-144-144.png" alt="" class="item-img-hover">
+                    </div>
+                    <p class="line-panel">
+                      <i class="item-line"></i>
+                    </p>
+                    <h3 class="item-title">物联网解决方案</h3>
+                    <p class="item-desc">
+                      定制化方案助力传统硬件厂商和中小平台服务商快速搭建稳定可靠、安全可控的物联网平台
+                    </p>
+                    <span class="item-link">查看详情</span>
+                  </div>
+                </div>
+                  </a>
+                </li>
+        </ul>
+
+     </div>
+
+     <div class="growup">
+            <div class="growupTitle">让科技助力酒店成长</div>
+            <div class="groupsubhead">庞大可靠的数据支撑，全方位为您提供专业的数据测评</div>
+            <div class="datas">
+                <div class="databg">
+                    <div class="dataTitle">行业数据</div>
+                    <div class="dataText">85,125条</div>
+                </div>
+                <div class="databg">
+                    <div class="dataTitle">服务酒店</div>
+                    <div class="dataText">85,1205家</div>
+                </div>
+                <div class="databg">
+                    <div class="dataTitle">累积测评</div>
+                    <div class="dataText">185,125条</div>
+                </div>
+            </div>
+     </div>
+     <div class="mission">
+         <div class="growupTitle">我们的使命</div>
+         <div class="missions">
+             <div class="missionbg">
+                 <img src="./images/mission/1.png" />
+                 <div class="missionText2">技术布道</div>
+                 <div class="missionText">行业先行</div>
+             </div>
+             <div class="missionbg">
+                 <img src="./images/mission/2.png" />
+                 <div class="missionText2">技术布道</div>
+                 <div class="missionText">行业先行</div>
+             </div>
+             <div class="missionbg">
+                 <img src="./images/mission/3.png" />
+                 <div class="missionText2">技术布道</div>
+                 <div class="missionText">行业先行</div>
+             </div>
+         </div>
+     </div>
+
+     <div class="open">
+         <div class="openTitle">先之云测评先已全面开放</div>
+
+        <img class="openImg" src="./images/open.png"/>
+
+         <div class="immediatelyEvaluation2" onclick="determineReview()">立即测评</div>
+
+
+     </div>
+
+
+    <script src="http://www.17sucai.com/static/js/jquery.min.js"></script>
+    <script src="./dist/js/swiper.min.js"></script>
+    <script src='./js/main.js'></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay:3000
+        });
+
+    </script>
+</body>
+</html>
